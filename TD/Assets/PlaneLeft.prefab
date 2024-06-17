@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6784251009922885210}
   - component: {fileID: -6880922998686957855}
   - component: {fileID: 6264930625654966095}
+  - component: {fileID: 5335223594446388527}
   m_Layer: 0
   m_Name: PlaneLeft
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3833057578038486632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.389999, y: 0.14000002, z: 0}
+  m_LocalPosition: {x: -12.206, y: 0.236, z: 0}
   m_LocalScale: {x: 0.66, y: 0.53, z: 0.92}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53,8 +54,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 3
+  m_Center: {x: 0.41999996, y: -1.0030414, z: 0}
 --- !u!114 &-6880922998686957855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,3 +124,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5335223594446388527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833057578038486632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95750bcc4efb69042b1109e6ebcf2c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftplane: {fileID: 0}

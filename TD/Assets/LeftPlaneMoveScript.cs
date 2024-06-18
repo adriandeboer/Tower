@@ -7,9 +7,9 @@ using UnityEngine.UIElements;
 public class LeftPlaneMoveScript : MonoBehaviour
 {
     public bool spawned;
-    public float moveSpeed;
     public float DeadzoneRigthside;
     public GameObject PlaneLeft;
+    public LogicScript Logic;
     
     
     void Start()

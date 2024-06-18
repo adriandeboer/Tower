@@ -8,9 +8,9 @@ public class RightPlaneMoveScript : MonoBehaviour
     public GameObject PlaneLeft;
     public LeftPlaneMoveScript LeftPlaneMoveScript;
     public bool Spawned = false;
-    public float moveSpeed;
     public float DeadZoneLeftSide;
     public GameObject PlaneRigth;
+    public LogicScript Logic;
     
     
     void Start()

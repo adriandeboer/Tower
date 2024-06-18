@@ -53,7 +53,7 @@ public class SpawnScriptLeft : MonoBehaviour
     void SpawnRigth()
     {
         Spawnheigth = Random.Range(0, 5);
-        Instantiate(PlaneRigth, new Vector3(transform.position.x, Random.Range(lowestpoint, highestpoint), 0),
+        Instantiate(PlaneRigth, new Vector3(transform.position.x, Random.Range(lowestpoint, highestpoint), 1),
             transform.rotation);
     }
 

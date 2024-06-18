@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.389999, y: 0.14000002, z: 0}
-  m_LocalScale: {x: 0.79, y: 0.53, z: 0.92}
+  m_LocalScale: {x: 0.33, y: 0.265, z: 0.46}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,9 +71,9 @@ MonoBehaviour:
   PlaneLeft: {fileID: 3833057578038486632, guid: 619edde952b15fe4694ecab24baca80b, type: 3}
   LeftPlaneMoveScript: {fileID: 0}
   Spawned: 0
-  moveSpeed: 3
   DeadZoneLeftSide: -5
   PlaneRigth: {fileID: 3833057578038486632}
+  logic: {fileID: 0}
 --- !u!212 &1649117177430064778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -139,3 +139,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftplane: {fileID: 3833057578038486632}
+  logic: {fileID: 0}

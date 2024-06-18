@@ -9,12 +9,13 @@ public class LeftPlaneMoveScript : MonoBehaviour
     public bool spawned;
     public float DeadzoneRigthside;
     public GameObject PlaneLeft;
-    public LogicScript Logic;
+    public LogicScript logic;
     
     
     void Start()
     {
         spawned = true;
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class LeftPlaneMoveScript : MonoBehaviour
     {
         if (spawned == true)
         {
-            transform.Translate(Vector3.right * (Time.deltaTime * moveSpeed)); // Moves the Plane in the direction of the tower. In the other script: getComp
+            transform.Translate(Vector3.right * (Time.deltaTime * logic.MoveSpeed)); // Moves the Plane in the direction of the tower. In the other script: getComp
         }
         
         if (transform.localPosition.x>DeadzoneRigthside)

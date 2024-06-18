@@ -778,7 +778,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0677, y: -4.61, z: 0}
-  m_LocalScale: {x: 19.03464, y: 2.1911, z: 1}
+  m_LocalScale: {x: 19.03465, y: 2.1911, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -882,6 +882,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameScore: 0
   ScoreText: {fileID: 1830501431}
+  MoveSpeed: 0
+  GamePhaseOne: 0
+  GamePhaseOneSpeedB: 0
+  GamePhaseTwo: 0
+  GamePhaseTwoSpeedB: 0
+  GamePhaseThree: 0
+  GamePhaseThreeSpeedB: 0
+  GamePhaseFour: 0
+  HighestCap: 0
+  GamePhaseFourSpeedB: 0
+  PhaseOneEntered: 0
+  PhaseTwoEntered: 0
+  PhaseThreeEntered: 0
+  PhaseFourEntered: 0
 --- !u!4 &1559519281
 Transform:
   m_ObjectHideFlags: 0

@@ -39,10 +39,6 @@ public class SpawnScriptLeft : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            SpawnRigth();
-        }
     }
 
     public void RestartSpawntimer()
@@ -53,7 +49,7 @@ public class SpawnScriptLeft : MonoBehaviour
     void SpawnRigth()
     {
         Spawnheigth = Random.Range(0, 5);
-        Instantiate(PlaneRigth, new Vector3(transform.position.x, Random.Range(lowestpoint, highestpoint), 1), transform.rotation);
+        Instantiate(PlaneRigth, new Vector3(transform.position.x, Random.Range(lowestpoint, highestpoint), 0), transform.rotation);
     }
 
 }

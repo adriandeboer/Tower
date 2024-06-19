@@ -37,10 +37,7 @@ public class PlaneSpawnScript : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            SpawnLeft();
-        }
+        
 
 
     }
@@ -53,7 +50,7 @@ public class PlaneSpawnScript : MonoBehaviour
     void SpawnLeft()
     {
         Spawnheigth = Random.Range(0,5);
-        Instantiate(PlaneLeft, new Vector3(transform.position.x, Random.Range(lowestpoint, highestpoint), 1), transform.rotation);
+        Instantiate(PlaneLeft, new Vector3(transform.position.x, Random.Range(lowestpoint, highestpoint), 0), transform.rotation);
         
     }
 

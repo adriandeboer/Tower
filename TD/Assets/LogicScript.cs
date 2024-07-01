@@ -10,27 +10,10 @@ public class LogicScript : MonoBehaviour
     public Text ScoreText;
 
     public float MoveSpeed;
+    public int localGameScore;
+    public float addedMoveSpeed;
 
-    public int GamePhaseOne; // Score für GamePhase
-    public float GamePhaseOneSpeedB;// Speed Multiplier
-
-    public int GamePhaseTwo;
-    public float GamePhaseTwoSpeedB;
-
-    public int GamePhaseThree;
-    public float GamePhaseThreeSpeedB;
-
-    public int GamePhaseFour;
-    public int HighestCap;
-    public float GamePhaseFourSpeedB;
-
-    public bool PhaseOneEntered = false;
-
-    public bool PhaseTwoEntered = false;
-
-    public bool PhaseThreeEntered = false;
-
-    public bool PhaseFourEntered = false;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -40,33 +23,15 @@ public class LogicScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (localGameScore < GameScore)
+        {
+            MoveSpeed += addedMoveSpeed;
+        }   
       Debug.Log(GameScore);
       ScoreText.text = GameScore.ToString();
+      localGameScore = GameScore;
 
-      if (GameScore>GamePhaseOne && GameScore<=GamePhaseTwo && PhaseOneEntered == false) // Phase 1
-      {
-          MoveSpeed *= GamePhaseOneSpeedB;
-          PhaseOneEntered = true;
 
-      }
-
-      if (GameScore >= GamePhaseTwo && GameScore< GamePhaseThree && PhaseTwoEntered == false) // Phase 2
-      {
-          MoveSpeed *= GamePhaseTwoSpeedB;
-          PhaseTwoEntered = true;
-      }
-
-      if (GameScore >= GamePhaseThree && GameScore < GamePhaseFour && PhaseThreeEntered == false)
-      {
-          MoveSpeed *= GamePhaseThreeSpeedB;
-          PhaseThreeEntered = true;
-      }
-
-      if (GameScore >= GamePhaseFour && GameScore < HighestCap && PhaseFourEntered == false)
-      {
-          MoveSpeed *= GamePhaseFourSpeedB;
-          PhaseFourEntered = true;
-      }
 
     }
 }

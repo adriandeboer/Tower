@@ -884,19 +884,8 @@ MonoBehaviour:
   GameScore: 0
   ScoreText: {fileID: 1830501431}
   MoveSpeed: 3
-  GamePhaseOne: 10
-  GamePhaseOneSpeedB: 1.5
-  GamePhaseTwo: 20
-  GamePhaseTwoSpeedB: 1.5
-  GamePhaseThree: 40
-  GamePhaseThreeSpeedB: 2
-  GamePhaseFour: 80
-  HighestCap: 2147483647
-  GamePhaseFourSpeedB: 4
-  PhaseOneEntered: 0
-  PhaseTwoEntered: 0
-  PhaseThreeEntered: 0
-  PhaseFourEntered: 0
+  localGameScore: 0
+  addedMoveSpeed: 0.1
 --- !u!4 &1559519281
 Transform:
   m_ObjectHideFlags: 0

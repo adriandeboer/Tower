@@ -555,6 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RespawnButton: {fileID: 1085622467}
+  OngoingGame: 0
   SampleScene:
     m_Handle: 0
 --- !u!1 &1654707031

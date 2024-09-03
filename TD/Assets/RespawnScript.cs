@@ -5,9 +5,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class RespawnScript : MonoBehaviour
 {
     public Button RespawnButton;
+    public bool OngoingGame = false;
+    
 
     public Scene SampleScene;
     // Start is called before the first frame update

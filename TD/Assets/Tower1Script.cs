@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,8 @@ public class Tower1Script : MonoBehaviour
     public int TowerHealth = 5;
     public bool TowerIsAlive = true;
     public bool TowerhitbyPlane = false;
+    public Scene RespawnScene;
+    public Scene SampleScene;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +49,7 @@ public class Tower1Script : MonoBehaviour
 
     public void GameOver()
     {
-        
+        SceneVisibilityManager.instance.Hide(SampleScene);
+        SceneVisibilityManager.instance.Show(RespawnScene);
     }
 }
